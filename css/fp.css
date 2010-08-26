@@ -1,0 +1,591 @@
+
+/* General *************/
+
+body{
+	/* font-family: Helvetica, Arial, sans-serif; */
+	font-size: 17px;
+	margin-bottom: 20px;
+	background: url(assets/bg2.gif) repeat-x fixed top;
+	color: #333;
+}
+
+a{
+	color: #000; 
+	text-decoration: none;
+	border-bottom: 2px solid #548a94;	
+}
+
+	a:hover,
+	a:active{
+		color: #548a94;
+	}
+	
+.container{
+	z-index: 1000000;
+}
+.clear{clear:both;}
+
+/* Generics *************/
+
+.accent_1{
+	color:#548A94;
+}
+
+.main_title{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+	
+/* Postcard ********/
+
+#postcard{
+	/* background: url(../images/zeebig.jpg) no-repeat center top #444 fixed; */
+	background: url(assets/zee-cover.jpg) no-repeat center top #444 fixed;
+	height: 491px;
+	z-index: 1;
+	clear: both;
+	position:relative;
+	margin-top:-2px;
+	width:950px;
+}
+	
+	
+	#postcard .main_title{
+		padding:16px 0 0 24px;
+		font-size: 32px;
+		color: #FFFFFF;
+		margin-left: 5px;
+		
+	}
+
+		#postcard h1 span{
+			color: #548a94;
+		}
+
+		#postcard h1 span.extra{
+			color: #ddd;
+			font-size: 14px;
+			width: 500px;
+			display: block;
+			line-height: 18px;
+			margin-top: 15px;
+		}
+	
+	#postcard h2{
+		color: #bbb;
+		margin-left: 5px;
+		font-size: 0.8em;
+	}
+	
+	/*#postcard h3{
+		margin-top: 25px;
+		margin-bottom: 0;
+		/* background: #548a94; 
+		color: #548a94;
+		font-size: 0.8em;
+		text-transform: capitalize;
+		padding-left: 5px;
+		line-height: 1.6em;
+	}*/
+	
+	#promo{
+		position:absolute;
+		top:332px;
+		left:24px;
+		width:550px;
+		height:132px;
+		padding:5px 10px;
+	}
+	
+		#promo .background{
+			width:550px;
+			height:132px;
+			position:absolute;
+			top:0px;
+			left:0px;
+			background-color:#fff;
+			opacity:0.3;filter:alpha(opacity=30);
+			z-index:1;
+			
+			border:1px solid #BEd9CF;
+			
+		}
+		#promo .subtitle{
+			color:#000;
+			font-size:17px;
+			margin:0px;
+			text-shadow: 1px 1px 1px #666;
+			text-transform:uppercase;
+			font-weight:bold;
+		}
+		#promo .contents{
+			z-index:10;
+			position:absolute;
+		}
+	
+		#promo .project_list{
+			margin:8px 0 0 0;
+			padding:0;
+			list-style-type:none;
+			
+		}
+		
+			#promo .project_list li{
+				float:left;
+				width:265px;
+			}
+			#promo .project_list li .content{
+				position:absolute;
+				z-index:2;
+			}
+			
+			 .project_list li a{
+				display:block;
+				border:none;
+				width:100%;
+				height:80px;
+				position:relative;
+			}
+			 .project_list li a .project_bg{
+				width:100%;
+				height:100%;
+				padding:5px 0 5px 0;
+				top:-5px;
+				left:-7px;
+				position:absolute;
+			}
+			 .project_list li a:hover .project_bg{
+				background:#548A94;
+				opacity:0.3;filter:alpha(opacity=30);
+				border:1px solid #888888;
+				top:-6px;
+				left:-6px;
+			}
+			 .project_list .dates{
+				margin-bottom:0px;
+			}
+			
+			.project_list li img{
+				display:block;
+				float:left;
+				
+			}
+			.project_list .descrip{
+				padding:0 5px;
+				float:left;
+				width:150px;
+			}
+			.project_list .descrip p{
+				font-size:10px;
+				margin-top:5px;
+			}
+		
+			.project_list .project{
+				margin:0;
+				padding:0;
+				font-size:14px;
+				color:#000;
+				text-transform:uppercase;
+				font-weight:bold;
+				line-height:14px;
+			}
+			
+			.project_list .artist{
+				margin:2px 0 0 0;
+				padding:0;
+				font-size:12px;
+				text-transform:uppercase;
+				
+				color:#548A94;
+			}
+
+/* under header *************/
+.container .header{
+	position:fixed;
+	z-index:-1;
+}
+
+
+/* under *************/
+#under{
+	position: fixed;
+	z-index: -1;
+	background: #fff;
+	margin:2px -790px 1.5px 790px;
+	width:160px;
+	
+}
+
+#under .main_title{
+	margin-top:11px;
+	padding:3px;
+	font-size:18px;
+}
+
+#under .more{
+	z-index: 10000;
+	top: 198px;
+}
+
+	
+	
+	#under h2{
+		color: #666;
+		font-size: 1.1em;
+		padding-left: 5px;
+		line-height: 1.1em;
+		margin-bottom: 0;
+	}
+	
+	#under h3{
+		margin-bottom: 5px;
+		/* background: #548a94; */
+		color: #548a94;
+		font-size: 0.8em;
+		text-transform: capitalize;
+		padding-left: 5px;
+		padding-top: 5px;
+	}
+
+/* Nav *************/
+
+#nav{
+	/* position: static; */
+}
+
+.navigation{
+	font-size: 15px;
+	text-transform:uppercase;
+	position: fixed;
+	z-index: 100; 
+	width:160px;
+}
+
+#nav{
+	margin:15px -790px 1.5px 790px;
+	padding-top:12px;
+}
+	#home_link{
+		position:absolute;
+		top:0px;
+		text-indent:-990em;
+		display:block;
+		height:25px;
+		width:160px;
+		border-bottom:0px;
+	}
+	
+	.navigation ul{
+		padding-left: 0;
+		list-style-type: none;
+		margin: 25px 0 0;
+		background: #fff;
+		z-index: 200; 
+	}
+		
+		.navigation ul li a,
+		.navigation ul li a:visited{
+			display: block;
+		}
+	
+	#nav h1,
+	#nav h2,
+	#nav li a{
+		padding-left: 5px;
+		height:22.4px;
+	}
+	
+	
+	#nav h1{
+		margin: 0;
+	}
+	
+		#nav h1 a{
+			display: block;
+			background: #548a94;
+			color: #fff;
+			
+		}
+	
+	
+	#nav h2{
+		margin-bottom: 0;
+		background: #fff;
+		font-size: 1.4em;
+	}
+	
+	img.streach{
+		width: 100%;
+		position: fixed;
+		/* z-index: -1; */
+	}
+	
+	#social_links{
+		position:fixed;
+		top:520px;
+		margin:2px -770px 1.5px 770px;
+		padding:2px;
+	}
+	#social_links #fb_like{
+		display:block;
+	}
+	#social_links .icons{
+		float:right;
+		padding-right:30px;
+		margin-top:8px;
+	}
+	#social_links a{
+		border:0px;
+		display:block;
+		width:50px;
+		height:50px;
+		text-indent:-990em;
+		overflow:hidden;
+		float:left;
+	}
+	#social_links #facebook{
+		background:url('assets/social/facebook.png') 0px 0px no-repeat;
+	}
+	#social_links #twitter{
+		background:url('assets/social/twitter.png') 0px 0px no-repeat;
+	}
+	#social_links #vimeo{
+		background:url('assets/social/vimeo.png') 0px 0px no-repeat;
+	}
+/* Page *************/
+
+#page{}
+
+#page .section {
+	width: 720px;
+	background: #fff;
+	padding-top: 24px;
+}
+	#page #about{padding-top:0px; margin-top:24px;}
+
+	.section h2{
+		text-transform:uppercase;
+		background: #548a94;
+		color: #fff;
+		padding-left:10px;
+		
+		font-size: 22px;
+		font-weight:bold;
+		margin-bottom: 1em;
+		
+		line-height: 1.5em;
+	}
+	
+		.section h2 span{
+			display: block;
+		}
+	
+	.section h4 {
+		font-size:0.8em;
+		line-height:2em;
+		margin: 0 10px 0 0;
+		float:left;
+		text-align:right;
+		width:150px;
+		color: #888;
+	}
+		.section h4.face-h3{
+			line-height:2.5em;
+		}
+
+	.section h3{
+		font-size:1.5em;
+		color: #888;
+	}
+	
+		.section h3 span{
+			display: block;
+			color: #000;
+		}
+		
+		.section h3 em{
+			color: #548a94;
+		}
+		
+	#page .subsect {
+		/* margin-bottom: 1em; */
+	}
+
+	#page .subsect blockquote{
+		font-weight: bold;
+	}
+
+	#page .subsect blockquote span{
+		font-weight: normal;
+	}
+
+	#page .subsect a.ovationtix{
+		border: 0;
+		margin: 5px 0;
+		display: block;
+		width: 160px;
+	}
+
+	#page #partners .span-17{
+		margin-top: 10px;
+	}
+
+	#page #partners a{
+		/* height: 120px; */
+		/*width: 120px;*/
+		padding: 0 15px 10px;
+		display: block;
+		float: left;
+		border-bottom: 0;
+		height: 80px;
+		margin: 0 10px 10px 0;
+	}
+	
+	#page #partners a:hover{
+		background: none;
+		border-bottom: 2px solid #548a94;
+		padding-bottom: 8px;
+	}
+
+	#page #partners a img{
+		vertical-align: middle;
+	}
+
+#page .project_list{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+#page .project_list li{
+	width:300px;
+}
+#page .project_list .artist{
+	text-align:left;
+}
+
+.media_view .lightview{
+	padding:4px;
+	margin-right:10px;
+	text-decoration:none;
+	border:none;
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+}
+.media_view .lightview:hover{
+	border:2px solid #548A94;
+	padding:2px;
+}
+
+.media_view .lightview
+	
+/* Sections *************/
+#newsletter_form{
+	width:250px;
+	font-size:12px;
+}
+	#newsletter_form label{
+		width:80px;
+		font-size:13px;
+		display:block;
+		float:left;
+	}
+	#newsletter_form br{
+		clear:both;
+		margin-top:2px;
+	}
+	
+	#newsletter_form .field{
+		border:1px solid #548A94;
+		padding:4px;
+		display:block;
+		width:140px;
+		float:right;
+		margin-bottom:2px;
+	}
+	
+	#newsletter_form .submit{
+		margin-top:4px;
+		border:1px solid #548A94;
+		background:#DDDDDD;
+		padding:3px;
+		float:right;
+	}
+	
+	#newsletter_form .submit:hover{
+		background-color:#548A94;
+		color:#FFFFFF;
+		cursor:pointer;
+	}
+
+#future .project_list li {
+	margin-bottom:15px;
+}
+#future .project_list li.last {
+	margin-bottom:0px;
+}
+
+/* Project Pages *************/
+.project #nav, .project #under{
+	position:absolute;
+}
+.project #postcard{
+	height:198px;
+	width:790px;
+}
+
+.project .project_title{
+	font-size:40px;
+	letter-spacing:-1px;
+	font-weight:normal;
+	color:#000;
+	text-transform:uppercase;
+	background:#FFF;
+	margin-bottom:0px;
+	padding:15px 6px 8px 6px;
+	line-height:20px;
+}
+.project .project_artist{
+	margin:0px;
+	background-color:#FFF;
+	color:#888;
+	font-size:28px;
+	padding:0 6px;
+	border-bottom:3px solid #888;
+}
+
+.project .section h2{
+	background-color:#BBB;
+}
+
+#sub_nav{
+	top:252px;
+	margin:15px -790px 1.5px 790px;
+	text-transform:lowercase;
+	border-top:3px solid #888;
+	text-align:right;
+}
+	#sub_nav ul{
+		margin-top:0px;
+	}
+
+.zee #postcard{
+	background:url('../images/zee-header-postcard.jpg') no-repeat fixed center top #444444;
+}
+.verdensteatret #postcard{
+	background:url('../images/verdensteatret-header-postcard.jpg') no-repeat fixed center top #444444;
+}
+.project .project_cluster{
+	margin-top:10px;
+}
+.project .project_cluster.first{
+	margin-top:0px;
+}
+
+.project .section h4{
+	width:135px;
+	font-size:1.1em;
+	margin-right:25px;
+	line-height:1.4em;
+}
